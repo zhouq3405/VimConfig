@@ -1,0 +1,35 @@
+VisualMark的用法还需要加强，   MiniBuf的用法也是
+
+
+常用插件：
+ctags，
+现在vim都默认安装了quickfix，
+保存一个位置列表，然后提供一系列命令，实现在这个位置列表中跳转。配合makefile使用，方便debug。
+nerdtree：窗口形式文件浏览。
+taglist：tag浏览
+vundle：插件管理
+youcpmpleteme：C++智能补全插件
+minibufexplorer：显示已打开的文件，方便在打开的文件中跳转
+statusline：状态栏vim的插件很多也很强大。
+个人认为够自己用就行了，不用过于深究
+
+作者：Waponx
+链接：https://www.zhihu.com/question/23590572/answer/59054572
+来源：知乎
+著作权归作者所有。商业转载请联系作者获得授权，非商业转载请注明出处。
+
+
+
+VIM的VisualMark插件Ctrl-F2时候总是报 E197错误 (2009-09-01 10:11:39)转载
+VIM的VisualMark插件Ctrl-F2时候总是报错 E197不能设置语言 en_US的错误提示
+解决办法：用gedit打开visualmark.vim找到exec ":lan mes en_US"，将其改为如下内容即可！
+  " Set the language to English
+  " exec ":lan mes en_US"
+  " 将上句改为下面两句中的任一句即可解决VisualMark的时候总是报错 E197不能设置语言 en_US的问题
+  “ 以下两句不可同时启用，我建议用 exec ":lan POSIX"，故此把exec ":lan C"给注释掉了
+  "exec ":lan C"
+  exec ":lan POSIX"
+  
+  
+ SurperTab.vba的安装使用方法
+ http://blog.csdn.net/qiumei1101381170/article/details/53164111

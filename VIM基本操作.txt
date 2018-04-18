@@ -1,0 +1,117 @@
+﻿配置VIM IDE
+
+http://blog.csdn.net/wooin/article/details/1858917
+
+
+:e – 重新加载当前文档。
+:e! – 重新加载当前文档，并丢弃已做的改动。 
+
+
+MiniBufExp里面：
+当放在标签上面的时候：v是vsp方式打开，s是sp方式打开
+
+NerdTree操作：
+C 将根路径设置为光标所在的目录
+# o 打开关闭文件或目录
+# e 以文件管理的方式打开选中的目录
+# t 在标签页中打开
+# T 在标签页中打开，但光标仍然留在 NERDTree
+# r 刷新光标所在的目录
+# R 刷新当前根路径
+
+
+# 移动分屏
+$ Ctrl+W H/J/K/L  // 左/上/下/右
+
+字体缩放
+# <ctrl> - 缩小
+# <ctrl> shift + 放大
+# <ctrl> 0 还原
+
+
+tagbar命令：
++, <kPlus>, zo: Open fold
+-, <kMinus>, zc: Close fold
+o, za: Toggle fold  
+*, <kMultiply>, zR: Open all fold
+=, zM: Close all folds
+s: Toggle sort      
+x：隐藏主编辑区Toggle
+
+
+quickfix命令：
+:cc                显示详细错误信息 ( :help :cc )
+:cp                跳到上一个错误 ( :help :cp )
+:cn                跳到下一个错误 ( :help :cn )
+:cl                列出所有错误 ( :help :cl )
+
+
+
+：s/old/new/g            使用new替换光标所在行的所有old
+：%s/old/new/g         使用new替换整个文件中的所有old
+：%s/old/new/gc       使用new替换整个文件中的所有old，并且每次都出现提示
+
+gD	跳转到局部变量的定义处
+''	跳转到光标上次停靠的地方, 是两个', 而不是一个"
+mx	设置书签,x只能是a-z的26个字母
+mx	设置书签,x只能是a-z的26个字母
+`x	跳转到书签处("`"是1左边的键)
+
+J       删除当前光标所在行行尾的换行符
+R text   用text覆盖当前光标坐在位置的数据，知道按下Esc键。（Replace）
+使用PageUp（Ctrl+B） PageDown（Ctrl+F）来上下翻页
+
+.	重复上一次命令
+C-g	显示光标所在行位置及文件状态信息
+C-r	Redo命令
+new/split/vsplit	打开一个新窗口,最后一个水平
+:set ignorecase	忽视大小写
+:set hlsearch	高亮搜索
+:set incsearch	逐步搜索,对当前输入的进行搜索
+:set noxxxx	xxxx对应以上操作,指取消选项
+
+:1,10 co 20	1到10行拷贝到20行之后
+:1,10 m 20	1到10行移动到20行之后
+
+p/P	在当前行后/前粘贴
+
+s/old/new	old替换new,只替换一个
+[%/#,#]s/old/new/g	old替换new,替换当前行所有,%是全文,#,#是指两行之间
+
+
+zfap 折叠一段文本
+zo	 打开折叠
+
+CTRL-W t 到顶部窗口
+CTRL-W b 到底部窗口
+
+使用"-o"选项可以让Vim为每一个文件打开一个窗口：
+"vim -o one.txt two.txt three.txt"。
+
+
+vimdiff file file2 使用vimdiff查看不同
+
+命令":tabe(dit) thatfile"在一个窗口中打开"thatfile"，该窗口占据着整个的Vim显示区域。命令":tab split/new"结果是新建了一个拥有一个窗口的页签。
+gt , gT 可以直接在tab之间切换,t后，T前。
+
+
+
+4、窗口大小调整
+纵向调整
+:ctrl+w + 纵向扩大（行数增加）
+:ctrl+w - 纵向缩小 （行数减少）
+:res(ize) num  例如：:res 5，显示行数调整为5行
+:res(ize)+num 把当前窗口高度增加num行
+:res(ize)-num 把当前窗口高度减少num行
+横向调整
+:vertical res(ize) num 指定当前窗口为num列
+:vertical res(ize)+num 把当前窗口增加num列
+:vertical res(ize)-num 把当前窗口减少num列
+
+
+:Ex 开启目录浏览器，可以浏览当前目录下的所有文件，并可以选择，打开后替代当前文件
+:Sex 水平分割当前窗口，并在一个窗口中开启目录浏览器，放在上面。
+
+
+:shell 可以在不关闭vi的情况下切换到shell命令行
+在shell里面执行exit 从shell回到vi

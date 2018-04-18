@@ -1,0 +1,7 @@
+let g:netrw_dirhistmax  =10
+let g:netrw_dirhist_cnt =5
+let g:netrw_dirhist_1='/home/zj/MyWork/vim-learn/u-boot-2012.04.01/fs/yaffs2'
+let g:netrw_dirhist_2='/etc/samba'
+let g:netrw_dirhist_3='/home/zhoujc/LD20_0130/sc1400/usr/src/dtv/factory/factory/factmode/factory_d/jp'
+let g:netrw_dirhist_4='/home/zhoujc/LD20_0130/sc1400/usr/src/dtv/factory/factory/factmode/factory_d'
+let g:netrw_dirhist_5='/home/zhoujc/LD20_0130/sc1400/usr/src/dtv/factory/factory/factmode/factory_d/jp'
